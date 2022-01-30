@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="container">
         <header class="page-header">
@@ -24,9 +26,47 @@
                 </div>
                 <div class="page-header-list-right">
                     <button class="menu-btn btn">
-                        <svg width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
-                        </svg>
+                        <label for="check">
+                            <svg width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" />
+                            </svg>
+                        </label>
+                        <input id="check" type="checkbox">
+                        <ul class="menu-list">
+                            <li>
+                                <a href="">menu</a>
+                            </li>
+                            <li>
+                                <a href="">man</a>
+                                <ul>
+                                    <li><a href="">Accessories</a></li>
+                                    <li><a href="">Bags</a></li>
+                                    <li><a href="">Denim</a></li>
+                                    <li><a href="">T-Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">woman</a>
+                                <ul>
+                                    <li><a href="">Accessories</a></li>
+                                    <li><a href="">Jackets & Coats</a></li>
+                                    <li><a href="">Polos</a></li>
+                                    <li><a href="">T-Shirts</a></li>
+                                    <li><a href="">Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">kids</a>
+                                <ul>
+                                    <li><a href="">Accessories</a></li>
+                                    <li><a href="">Jackets & Coats</a></li>
+                                    <li><a href="">Polos</a></li>
+                                    <li><a href="">T-Shirts</a></li>
+                                    <li><a href="">Shirts</a></li>
+                                    <li><a href="">Bags</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </button>
                     <button class="account-btn btn">
                         <svg width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
@@ -41,9 +81,7 @@
                         </svg>
                         <span>5</span>
                     </button>
-
                 </div>
-
             </div>
         </header>
         <main>
@@ -86,11 +124,11 @@
             <section class="product content-center">
                 <h2 class="product-heading">Fetured Items</h2>
                 <p class="product-heading-text">Shop for items based on what we featured in this week</p>
-                <ul class="product-list">
+                <ul class="list-position">
                     <li>
                         <a class="product-link" href="">
                             <article class="product-box-item">
-                                <img src="img/oblamingo.jpg" alt="">
+                                <img src="img/man-in-jakcet.jpg" alt="">
                                 <div class="product-box-text">
                                     <h3 class="product-box-item-heading">
                                         Ellery x m'o capsule
@@ -107,7 +145,7 @@
                     <li>
                         <a class="product-link" href="">
                             <article class="product-box-item">
-                                <img src="img/woman in blakc.png" alt="">
+                                <img src="img//woman-in-blakc.png" alt="">
                                 <div class="product-box-text">
                                     <h3 class="product-box-item-heading">
                                         Ellery x m'o capsule
@@ -124,7 +162,7 @@
                     <li>
                         <a class="product-link" href="">
                             <article class="product-box-item">
-                                <img src="img/man in shorts.jpg" alt="">
+                                <img src="img/man-in-shorts.jpg" alt="">
                                 <div class="product-box-text">
                                     <h3 class="product-box-item-heading">
                                         Ellery x m'o capsule
@@ -141,7 +179,7 @@
                     <li>
                         <a class="product-link" href="">
                             <article class="product-box-item">
-                                <img src="img/man in yellow pants.jpg" alt="">
+                                <img src="img/man-in-yellow-pants.jpg" alt="">
                                 <div class="product-box-text">
                                     <h3 class="product-box-item-heading">
                                         Ellery x m'o capsule
@@ -158,7 +196,7 @@
                     <li>
                         <a class="product-link" href="">
                             <article class="product-box-item">
-                                <img src="img/woman in jakcet.jpg" alt="">
+                                <img src="img/woman-in-jakcet.jpg" alt="">
                                 <div class="product-box-text">
                                     <h3 class="product-box-item-heading">
                                         Ellery x m'o capsule
@@ -175,7 +213,7 @@
                     <li>
                         <a class="product-link" href="">
                             <article class="product-box-item">
-                                <img src="img/woman... jast woman.jpg" alt="">
+                                <img src="img/woman-in-shirt.jpg" alt="">
                                 <div class="product-box-text">
                                     <h3 class="product-box-item-heading">
                                         Ellery x m'o capsule
@@ -190,9 +228,10 @@
                         </a>
                     </li>
                 </ul>
+                <button class="product-btn">Browse All Product</button>
             </section>
         </main>
-    </div>   
+    </div>
 </body>
 
 </html>
