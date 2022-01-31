@@ -22,6 +22,9 @@ body{
     border: none;
     padding: 0;
 }
+.link{
+    text-decoration: none;
+}
 .list-position{
     display: flex;
     justify-content: space-between;
@@ -92,17 +95,48 @@ input:checked ~ .menu-list{
     display: none;
 }
 .menu-list{
+    outline: 1px solid red;
     list-style-type: none;
-    padding: 0;
-    max-width: 232px;
+    padding: 37px 0 0 34px;
+    width: 232px;
     background-color: #fff;
     position: absolute;
-    top: 0;
+    top: 30px;
     right: 0;
-    padding: 37px 0 0 34px;
 }
-.menu-list li{
-    margin: 20px 0 12px;
+.menu-list-menu{
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #000000;
+    margin-bottom: 24px;
+}
+.menu-list-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px 0 12px 33px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #F16D7F;
+}
+.menu-list-categories{
+    list-style-type: none;
+}
+.menu-list-link-item{
+    list-style-type: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #6F6E6E;
 }
 .account-btn{
     width: 29px;
@@ -260,6 +294,7 @@ input:checked ~ .menu-list{
 .product{
     padding-top: 66px;
     display: block;
+    justify-content: center;
     
     outline: 1px solid #222222;
 }
