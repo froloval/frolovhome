@@ -9,6 +9,7 @@ body{
 .container{
     width: 100%;
     margin: 0 auto;
+    outline: 2px solid red;
 }
 .content-center{
     max-width: 1140px;
@@ -367,4 +368,13 @@ input:checked ~ .menu-list{
     display: flex;
     justify-content: center;
     align-content: center;
+}
+.footer-top{
+    min-height: 341px;
+    background-color: #222224;
+}
+.footer-top-kink{
+    max-width: 360px;
+    justify-content: center;
+
 }
