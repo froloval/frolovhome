@@ -296,7 +296,7 @@ input:checked ~ .menu-list{
     padding-top: 66px;
     display: block;
     justify-content: center;
-    
+        
     outline: 1px solid #222222;
 }
 .product-heading{
@@ -367,7 +367,23 @@ input:checked ~ .menu-list{
 .product-btn{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    max-width: 211px;
+    min-height: 47px;
+    border: #ff6a6a solid 1px;
+    line-height: 19px;
+    color: #f26376;
+    background-color: #fff;
+}
+.product-btn:hover{
+    color: #fff;
+    background-color: #f26376;
+}
+.product-btn :active{
+    color: #f26376;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
 .footer-top{
     min-height: 341px;
