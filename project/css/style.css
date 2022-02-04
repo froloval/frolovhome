@@ -36,7 +36,10 @@ body{
     list-style-type: none;
 }
 .page-header{
+    height: 75px;
     background-color: #222222;
+    align-items: center;
+    display: flex;
 }
 .page-header svg{
     display: block;
@@ -81,6 +84,7 @@ body{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    outline: #f16d7f solid 1px;
 }
 .menu-btn{ 
     width: 32px;
@@ -96,14 +100,15 @@ input:checked ~ .menu-list{
     display: none;
 }
 .menu-list{
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
     list-style-type: none;
     padding: 37px 0 0 34px;
     width: 232px;
     background-color: #fff;
     position: absolute;
-    top: 30px;
-    right: 0;
+    top: 43px;
+    right: -200px;
+    text-align: left;
 }
 .menu-list-menu{
     text-transform: uppercase;
@@ -138,6 +143,7 @@ input:checked ~ .menu-list{
     line-height: 17px;
     /* identical to box height */
     color: #6F6E6E;
+    margin: 0 0 11px 54.5px;
 }
 .account-btn{
     width: 29px;
@@ -294,8 +300,10 @@ input:checked ~ .menu-list{
 }
 .product{
     padding-top: 66px;
-    display: block;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
         
     outline: 1px solid #222222;
 }
@@ -368,6 +376,7 @@ input:checked ~ .menu-list{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     text-decoration: none;
     max-width: 211px;
     min-height: 47px;
