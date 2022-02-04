@@ -329,19 +329,21 @@ input:checked ~ .menu-list{
     max-width: 360px;
     color: #222222;
 }
-.product-link{
-    text-decoration: none;
-    min-height: 581px;
-}
 .product-box-item{
     margin: 0px 0px 0px 0px;
     box-sizing: border-box;
     text-align: left;
+    min-height: 581px;
+}
+.product-link{
+    text-decoration: none;
 }
 .product-box-text{
     width: 100%;
+    padding: 24.35px 0 50px 18px;
 }
-.product-box-item-heading{
+.product-box-item-heading{    
+    margin-bottom: 12.65px;
     text-transform: uppercase;
     font-style: normal;
     font-weight: normal;
@@ -351,6 +353,8 @@ input:checked ~ .menu-list{
     color: #000000;
 }
 .product-box-item-text{
+    max-width: 314.74px;
+    margin-bottom: 18px;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -365,6 +369,7 @@ input:checked ~ .menu-list{
     color: #f16d7f;
 }
 .product-btn{
+    margin-top: 18.5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -386,11 +391,15 @@ input:checked ~ .menu-list{
     border: 1px solid #ccc;
 }
 .footer-top{
+    margin-top: 95.5px;
     min-height: 341px;
     background-color: #222224;
 }
 .footer-top-kink{
     max-width: 360px;
     justify-content: center;
-
+}
+.footer-top-kink-icon{
+    margin-top: 103px;
+    fill: #f16d7f;
 }
