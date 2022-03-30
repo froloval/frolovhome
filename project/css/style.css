@@ -61,45 +61,37 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+.header-list__logo{
     display: block;
     width: 44px;
     height: 38px;
     text-decoration: none;
 }
-.logo img {
+.header-list__logo img {
     width: 100%;
     height: 100%;
 }
-.page-header-search{
+.header-list__search{
     width: 26px;
     height: 26px;
 }
-.page-header-search svg{
+.header-list__search svg{
     fill: #fff;    
 }
-.page-header-list-right{
-    width: 168px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    outline: #f16d7f solid 1px;
-}
-.menu-btn{ 
+.header-list__menu{ 
     width: 32px;
     height: 23px;
 }
-.menu-btn svg{
+.header-list__menu svg{
     fill: #fff;    
 }
-input:checked ~ .menu-list{
+input:checked ~ .header-menu-list{
     visibility: hidden;;
 }
 #check {
     display: none;
 }
-.menu-list{
+.header-menu-list{
     /*outline: 1px solid red;*/
     list-style-type: none;
     padding: 37px 0 0 34px;
@@ -110,7 +102,7 @@ input:checked ~ .menu-list{
     right: -200px;
     text-align: left;
 }
-.menu-list-menu{
+.header-menu-list__menu{
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
@@ -120,7 +112,7 @@ input:checked ~ .menu-list{
     color: #000000;
     margin-bottom: 24px;
 }
-.menu-list-link{
+.header-menu-list__categories{
     text-decoration: none;
     text-transform: uppercase;
     margin: 20px 0 12px 33px;
@@ -130,11 +122,9 @@ input:checked ~ .menu-list{
     line-height: 17px;
     /* identical to box height */
     color: #F16D7F;
-}
-.menu-list-categories{
     list-style-type: none;
 }
-.menu-list-link-item{
+.header-menu-list__item{
     list-style-type: none;
     text-decoration: none;
     font-style: normal;
@@ -144,26 +134,27 @@ input:checked ~ .menu-list{
     /* identical to box height */
     color: #6F6E6E;
     margin: 0 0 11px 54.5px;
+    
 }
-.account-btn{
+.header-list__account{
     width: 29px;
     height: 29px;
 }
-.account-btn svg{
+.header-list__account svg{
     fill: #fff;
 }
-.cart-btn{
+.header-list__basket{
     width: 32px;
     height: 29px;
     position: relative;
 }
-.cart-btn:hover svg{
+.header-list__basket:hover svg{
     fill: orange;    
 }
-.cart-btn svg{
+.header-list__basket svg{
     fill: #fff;    
 }
-.cart-btn span{
+.header-list__basket span{
     display: flex;
     justify-content: center;
     align-items: center;
