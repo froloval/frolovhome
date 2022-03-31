@@ -186,11 +186,11 @@ input:checked ~ .header-menu-list{
     background-repeat: no-repeat;
     background-position: -226px bottom;
 }
-.poster-title-box{
+.poster-img-box{
     margin: 0 0 8% 49%;
      position: relative;    
 }
-.poster-title-box::before{
+.poster-img-box::before{
     content: "";
     display: block;
     width: 12px;
@@ -200,14 +200,14 @@ input:checked ~ .header-menu-list{
     top: 2px;
     left: -29px;
 }
-.poster-title{
+.poster-img-box__title{
     margin: 0;
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
     text-transform: uppercase;
 }
-.poster-subtitle{
+.poster-img-box__subtitle{
     margin: 0;
     font-weight: 700;
     font-size: 32px;
@@ -216,6 +216,9 @@ input:checked ~ .header-menu-list{
 }
 .poster-subtitle span{
     color: #f16d7f;
+}
+.categories-title__hiden{
+    visibility: hidden;
 }
 .categories li{
     width: 100%;
@@ -247,29 +250,29 @@ input:checked ~ .header-menu-list{
 .categories-link p, .categories-link h3{
     margin: 0;
 }
-.categories-woman{
+.categories-link__woman{
     background-image: url(../img/categories-woman.jpg);
 }
-.categories-woman:hover {
+.categories-link__woman:hover {
     background-blend-mode: normal;
 }
-.categories-man{
+.categories-link__man{
     background-image: url(../img/categories-man.jpg);
 }
-.categories-man:hover{
+.categories-link__man:hover{
     background-blend-mode: normal;
 }
-.categories-kids{
+.categories-link__kids{
     background-image: url(../img/categories-kids.jpg);    
 }
-.categories-kids:hover{
+.categories-link__kids:hover{
     background-blend-mode: normal;
 }
-.categories-accesories{
+.categories-link__accesories{
     background-image: url(../img/categories-accesories.jpg);
     width: 100%;    
 }
-.categories-accesories:hover{
+.categories-link__accesories:hover{
     background-blend-mode: normal;
 }
 .categories-subtitle, 
@@ -365,16 +368,19 @@ input:checked ~ .header-menu-list{
 }
 .product-btn{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;    
     text-align: center;
     text-decoration: none;
-    max-width: 211px;
+    max-width: 211px;/*в браузере размеры меньше*/
     min-height: 47px;
     border: #ff6a6a solid 1px;
     line-height: 19px;
+    font-weight: 400;
+    font-size: 16px;
     color: #f26376;
     background-color: #fff;
+    word-break: break-all;
 }
 .product-btn:hover{
     color: #fff;
@@ -385,12 +391,52 @@ input:checked ~ .header-menu-list{
     background-color: #fff;
     border: 1px solid #ccc;
 }
-.footer-top{
+.footer-Benefits{
     min-height: 341px;
     background-color: #222224;
 }
-.footer-top-kink{
+.footer-Benefits-kink{
     max-width: 360px;
     justify-content: center;
+    list-style-type: none;
+    /*padding-top: 103px;изначально хотел сделать черех один паддинг на весь блок*/
+}
+.footer-Benefits-link__icon{
+    margin-top: 103px;
+    justify-content: center;/*не могу отцентровать иконки*/
+    text-align: center;
+}
+.footer-Benefits-link__title{
+    list-style-type: none;
+    margin-top: 23px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #FBFBFB;
+    text-align: center;
+}
+.footer-Benefits-kink__text{
+    list-style-type: none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    margin: 16px;
+    color: #FBFBFB;
+}
+.footer-photo{
+    min-height: 448px;
+    max-width: 1600px;
+    background-image: url(../img/fon-photo.jpg);
+    /*background: rgba(244, 244, 244, 0.7);
+    background-blend-mode: darken; сдесь попытка воспроизвести фото*/
+    display: flex;
+}
+.footer-photo-quote{
 
 }
