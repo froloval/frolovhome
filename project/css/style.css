@@ -1,32 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
-body{
+
+body {
     margin: 0;
     font-family: Lato;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
 }
-.container{
+
+.container {
     width: 100%;
     margin: 0 auto;
     outline: 2px solid red;
 }
-.content-center{
+
+.content-center {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
     /*outline: 1px solid #fff;*/
 }
-.btn{
+
+.btn {
     display: block;
     background-color: transparent;
     border: none;
     padding: 0;
 }
-.link{
+
+.link {
     text-decoration: none;
 }
-.list-position{
+
+.list-position {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,63 +41,78 @@ body{
     margin: 0;
     list-style-type: none;
 }
-.page-header{
+
+.page-header {
     height: 75px;
     background-color: #222222;
     align-items: center;
     display: flex;
 }
-.page-header svg{
+
+.page-header svg {
     display: block;
     width: 100%;
     height: 100%;
 }
-.page-header-list button:hover{
+
+.page-header-list button:hover {
     fill: orange;
 }
-.page-header-list{
+
+.page-header-list {
     padding: 0;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
 }
-.page-header-list-left{
+
+.page-header-list-left {
     width: 111px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-list__logo{
+
+.header-list__logo {
     display: block;
     width: 44px;
     height: 38px;
     text-decoration: none;
 }
+
 .header-list__logo img {
     width: 100%;
     height: 100%;
 }
-.header-list__search{
+
+.header-list__search {
     width: 26px;
     height: 26px;
 }
-.header-list__search svg{
-    fill: #fff;    
+
+.header-list__search svg {
+    fill: #fff;
 }
-.header-list__menu{ 
+
+.header-list__menu {
     width: 32px;
     height: 23px;
 }
-.header-list__menu svg{
-    fill: #fff;    
+
+.header-list__menu svg {
+    fill: #fff;
 }
-input:checked ~ .header-menu-list{
-    visibility: hidden;;
+
+input:checked~.header-menu-list {
+    visibility: hidden;
+    ;
 }
+
 #check {
     display: none;
 }
-.header-menu-list{
+
+.header-menu-list {
     /*outline: 1px solid red;*/
     list-style-type: none;
     padding: 37px 0 0 34px;
@@ -102,7 +123,8 @@ input:checked ~ .header-menu-list{
     right: -200px;
     text-align: left;
 }
-.header-menu-list__menu{
+
+.header-menu-list__menu {
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
@@ -112,7 +134,8 @@ input:checked ~ .header-menu-list{
     color: #000000;
     margin-bottom: 24px;
 }
-.header-menu-list__categories{
+
+.header-menu-list__categories {
     text-decoration: none;
     text-transform: uppercase;
     margin: 20px 0 12px 33px;
@@ -124,7 +147,8 @@ input:checked ~ .header-menu-list{
     color: #F16D7F;
     list-style-type: none;
 }
-.header-menu-list__item{
+
+.header-menu-list__item {
     list-style-type: none;
     text-decoration: none;
     font-style: normal;
@@ -134,50 +158,58 @@ input:checked ~ .header-menu-list{
     /* identical to box height */
     color: #6F6E6E;
     margin: 0 0 11px 54.5px;
-    
+
 }
-.header-list__account{
+
+.header-list__account {
     width: 29px;
     height: 29px;
 }
-.header-list__account svg{
+
+.header-list__account svg {
     fill: #fff;
 }
-.header-list__basket{
+
+.header-list__basket {
     width: 32px;
     height: 29px;
     position: relative;
 }
-.header-list__basket:hover svg{
-    fill: orange;    
+
+.header-list__basket:hover svg {
+    fill: orange;
 }
-.header-list__basket svg{
-    fill: #fff;    
+
+.header-list__basket svg {
+    fill: #fff;
 }
-.header-list__basket span{
+
+.header-list__basket span {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 19px;
     height: 19px;
     background-color: #f16d7f;
-    border-radius: 50%;  
+    border-radius: 50%;
     font-family: "Lato";
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
-    color: #ffffff; 
+    color: #ffffff;
     position: absolute;
     top: -8px;
     right: -10px;
 }
-.poster{
+
+.poster {
     width: 100%;
     background-color: #f1e4e6;
     margin-bottom: 65px;
-   }
-.poster-img{
+}
+
+.poster-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,11 +218,13 @@ input:checked ~ .header-menu-list{
     background-repeat: no-repeat;
     background-position: -226px bottom;
 }
-.poster-img-box{
+
+.poster-img-box {
     margin: 0 0 8% 49%;
-     position: relative;    
+    position: relative;
 }
-.poster-img-box::before{
+
+.poster-img-box::before {
     content: "";
     display: block;
     width: 12px;
@@ -200,43 +234,50 @@ input:checked ~ .header-menu-list{
     top: 2px;
     left: -29px;
 }
-.poster-img-box__title{
+
+.poster-img-box__title {
     margin: 0;
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
     text-transform: uppercase;
 }
-.poster-img-box__subtitle{
+
+.poster-img-box__subtitle {
     margin: 0;
     font-weight: 700;
     font-size: 32px;
     line-height: 38.4px;
     text-transform: uppercase;
 }
-.poster-subtitle span{
+
+.poster-subtitle span {
     color: #f16d7f;
 }
-.categories-title__hiden{
+
+.categories-title__hiden {
     visibility: hidden;
 }
-.categories li{
+
+.categories li {
     width: 100%;
     max-width: 360px;
     min-height: 260px;
 }
+
 .categories li:last-child,
-.categories li:last-child a{
+.categories li:last-child a {
     max-width: 100%;
     min-height: 180px;
 }
+
 /*.categories-list{}*/
-.categories-link{
+.categories-link {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    width: 100%;    
+    width: 100%;
     max-width: 360px;
     min-height: 260px;
     margin-bottom: 30px;
@@ -247,61 +288,76 @@ input:checked ~ .header-menu-list{
     background-color: rgba(33, 22, 22, 0.7);
     background-blend-mode: darken;
 }
-.categories-link p, .categories-link h3{
+
+.categories-link p,
+.categories-link h3 {
     margin: 0;
 }
-.categories-link__woman{
+
+.categories-link__woman {
     background-image: url(../img/categories-woman.jpg);
 }
+
 .categories-link__woman:hover {
     background-blend-mode: normal;
 }
-.categories-link__man{
+
+.categories-link__man {
     background-image: url(../img/categories-man.jpg);
 }
-.categories-link__man:hover{
+
+.categories-link__man:hover {
     background-blend-mode: normal;
 }
-.categories-link__kids{
-    background-image: url(../img/categories-kids.jpg);    
+
+.categories-link__kids {
+    background-image: url(../img/categories-kids.jpg);
 }
-.categories-link__kids:hover{
+
+.categories-link__kids:hover {
     background-blend-mode: normal;
 }
-.categories-link__accesories{
+
+.categories-link__accesories {
     background-image: url(../img/categories-accesories.jpg);
-    width: 100%;    
+    width: 100%;
 }
-.categories-link__accesories:hover{
+
+.categories-link__accesories:hover {
     background-blend-mode: normal;
 }
-.categories-subtitle, 
-.categories-title{
+
+.categories-subtitle,
+.categories-title {
     margin: 0%;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
 }
-.categories-subtitle{
+
+.categories-subtitle {
     color: #fff;
     line-height: 19.2px;
 }
-.categories-title{     
+
+.categories-title {
     color: #f16d7f;
     font-size: 24px;
     line-height: 28.8px;
     font-weight: 700;
 }
-.product{
+
+.product {
     padding-top: 66px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-        
+
     outline: 1px solid #222222;
 }
-.product-heading{
+
+.product-heading {
     justify-content: center;
     text-align: center;
     font-style: normal;
@@ -312,7 +368,8 @@ input:checked ~ .header-menu-list{
     color: #222222;
     margin-bottom: 6px;
 }
-.product-heading-text{
+
+.product-heading-text {
     text-align: center;
     margin-bottom: 48px;
     font-style: normal;
@@ -322,28 +379,33 @@ input:checked ~ .header-menu-list{
     /* identical to box height */
     color: #9F9F9F;
 }
+
 /*.product-list{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;    
 }*/
-.list-position li{
+.list-position li {
     max-width: 360px;
     color: #222222;
 }
-.product-link{
+
+.product-link {
     text-decoration: none;
     min-height: 581px;
 }
-.product-box-item{
+
+.product-box-item {
     margin: 0px 0px 0px 0px;
     box-sizing: border-box;
     text-align: left;
 }
-.product-box-text{
+
+.product-box-text {
     width: 100%;
 }
-.product-box-item-heading{
+
+.product-box-item-heading {
     text-transform: uppercase;
     font-style: normal;
     font-weight: normal;
@@ -352,27 +414,82 @@ input:checked ~ .header-menu-list{
     /* identical to box height */
     color: #000000;
 }
-.product-box-item-text{
+
+.product-box-item-text {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: #5d5d5d;
 }
-.product-box-item-price{
+
+.product-box-item-price {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     color: #f16d7f;
 }
-.product-btn{
+
+.products-item-btn {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 38.3%;
+    min-height: 43px;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 188px;
+    left: 32.7%;
+}
+
+.products-item-btn svg {
+    fill: #fff;
+    margin: 0 11px 0 0;
+}
+
+.product-box-item:hover .products-item-btn {
+    display: flex;
+}
+
+.product-box-item:hover .products-item-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.product-box-item:hover .products-item-btn:hover svg {
+    fill: #000;
+}
+
+.pproduct-box-item:hover .products-item-btn:active {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.product-box-item-item:hover .products-item-btn:active svg {
+    fill: #fff;
+}
+
+.product-box-item:hover .products-item-photo {
+    filter: brightness(50%);
+}
+
+.product-btn {
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     text-align: center;
     text-decoration: none;
-    max-width: 211px;/*в браузере размеры меньше*/
+    max-width: 211px;
+    /*в браузере размеры меньше*/
     min-height: 47px;
     border: #ff6a6a solid 1px;
     line-height: 19px;
@@ -382,31 +499,38 @@ input:checked ~ .header-menu-list{
     background-color: #fff;
     word-break: break-all;
 }
-.product-btn:hover{
+
+.product-btn:hover {
     color: #fff;
     background-color: #f26376;
 }
-.product-btn :active{
+
+.product-btn :active {
     color: #f26376;
     background-color: #fff;
     border: 1px solid #ccc;
 }
-.footer-Benefits{
+
+.footer-Benefits {
     min-height: 341px;
     background-color: #222224;
 }
-.footer-Benefits-kink{
+
+.footer-Benefits-kink {
     max-width: 360px;
     justify-content: center;
     list-style-type: none;
     /*padding-top: 103px;изначально хотел сделать черех один паддинг на весь блок*/
 }
-.footer-Benefits-link__icon{
+
+.footer-Benefits-link__icon {
     margin-top: 103px;
-    justify-content: center;/*не могу отцентровать иконки*/
+    justify-content: center;
+    /*не могу отцентровать иконки*/
     text-align: center;
 }
-.footer-Benefits-link__title{
+
+.footer-Benefits-link__title {
     list-style-type: none;
     margin-top: 23px;
     font-family: 'Lato';
@@ -418,7 +542,8 @@ input:checked ~ .header-menu-list{
     color: #FBFBFB;
     text-align: center;
 }
-.footer-Benefits-kink__text{
+
+.footer-Benefits-kink__text {
     list-style-type: none;
     font-family: 'Lato';
     font-style: normal;
@@ -429,7 +554,8 @@ input:checked ~ .header-menu-list{
     margin: 16px;
     color: #FBFBFB;
 }
-.footer-photo{
+
+.footer-photo {
     min-height: 448px;
     max-width: 1600px;
     background-image: url(../img/fon-photo.jpg);
@@ -437,6 +563,5 @@ input:checked ~ .header-menu-list{
     background-blend-mode: darken; сдесь попытка воспроизвести фото*/
     display: flex;
 }
-.footer-photo-quote{
 
-}
+.footer-photo-quote {}
