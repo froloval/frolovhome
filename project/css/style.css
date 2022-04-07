@@ -255,7 +255,7 @@ input:checked~.header-menu-list {
     color: #f16d7f;
 }
 
-.categories-title__hiden {
+.categories-header {
     visibility: hidden;
 }
 
@@ -294,36 +294,36 @@ input:checked~.header-menu-list {
     margin: 0;
 }
 
-.categories-link__woman {
+.categories-list__woman {
     background-image: url(../img/categories-woman.jpg);
 }
 
-.categories-link__woman:hover {
+.categories-list__woman:hover {
     background-blend-mode: normal;
 }
 
-.categories-link__man {
+.categories-list__man {
     background-image: url(../img/categories-man.jpg);
 }
 
-.categories-link__man:hover {
+.categories-list__man:hover {
     background-blend-mode: normal;
 }
 
-.categories-link__kids {
+.categories-list__kids {
     background-image: url(../img/categories-kids.jpg);
 }
 
-.categories-link__kids:hover {
+.categories-list__kids:hover {
     background-blend-mode: normal;
 }
 
-.categories-link__accesories {
+.categories-list__accesories {
     background-image: url(../img/categories-accesories.jpg);
     width: 100%;
 }
 
-.categories-link__accesories:hover {
+.categories-list__accesories:hover {
     background-blend-mode: normal;
 }
 
@@ -543,7 +543,7 @@ input:checked~.header-menu-list {
     text-align: center;
 }
 
-.footer-Benefits-kink__text {
+.footer-Benefits-link__text {
     list-style-type: none;
     font-family: 'Lato';
     font-style: normal;
@@ -564,4 +564,43 @@ input:checked~.header-menu-list {
     display: flex;
 }
 
-.footer-photo-quote {}
+.footer-photo-quote {
+    display: block;
+    justify-content: center;
+    /*не понял, почему не привязал данные свойства к footer-photo-quote-title*/
+    text-align: center;
+    width: 800px;
+    border: red solid 1px;
+    /*рамки для отладки позиционирования*/
+}
+
+.footer-photo-quote-face {
+    margin-top: 86px;
+}
+
+.footer-photo-quote-title {
+    max-width: 360px;
+    margin-top: 30px;
+    border: red solid 1px;
+}
+
+.footer-photo__form {
+    max-width: 800px;
+}
+
+.footer-end {
+    display: flex;
+    background-color: #222224;
+    min-height: 79px;
+    justify-content: space-between;
+}
+
+.footer-end-copyright {
+    Font family: Lato;
+    Font style: Regular;
+    Font size: 16px;
+    Line height: 19px;
+    Line height: 100%;
+    Align: Left Vertical align: Top Fill:;
+    color: #FBFBFB;
+}
