@@ -399,6 +399,7 @@ input:checked~.header-menu-list {
     margin: 0px 0px 0px 0px;
     box-sizing: border-box;
     text-align: left;
+    position: relative;
 }
 
 .product-box-text {
@@ -572,6 +573,7 @@ input:checked~.header-menu-list {
     width: 800px;
     border: red solid 1px;
     /*рамки для отладки позиционирования*/
+    align-items: center;
 }
 
 .footer-photo-quote-face {
@@ -582,6 +584,9 @@ input:checked~.header-menu-list {
     max-width: 360px;
     margin-top: 30px;
     border: red solid 1px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .footer-photo__form {
