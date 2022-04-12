@@ -255,7 +255,7 @@ input:checked~.header-menu-list {
     color: #f16d7f;
 }
 
-.categories-title__hiden {
+.categories-header {
     visibility: hidden;
 }
 
@@ -294,36 +294,36 @@ input:checked~.header-menu-list {
     margin: 0;
 }
 
-.categories-link__woman {
+.categories-list__woman {
     background-image: url(../img/categories-woman.jpg);
 }
 
-.categories-link__woman:hover {
+.categories-list__woman:hover {
     background-blend-mode: normal;
 }
 
-.categories-link__man {
+.categories-list__man {
     background-image: url(../img/categories-man.jpg);
 }
 
-.categories-link__man:hover {
+.categories-list__man:hover {
     background-blend-mode: normal;
 }
 
-.categories-link__kids {
+.categories-list__kids {
     background-image: url(../img/categories-kids.jpg);
 }
 
-.categories-link__kids:hover {
+.categories-list__kids:hover {
     background-blend-mode: normal;
 }
 
-.categories-link__accesories {
+.categories-list__accesories {
     background-image: url(../img/categories-accesories.jpg);
     width: 100%;
 }
 
-.categories-link__accesories:hover {
+.categories-list__accesories:hover {
     background-blend-mode: normal;
 }
 
@@ -399,6 +399,7 @@ input:checked~.header-menu-list {
     margin: 0px 0px 0px 0px;
     box-sizing: border-box;
     text-align: left;
+    position: relative;
 }
 
 .product-box-text {
@@ -543,7 +544,7 @@ input:checked~.header-menu-list {
     text-align: center;
 }
 
-.footer-Benefits-kink__text {
+.footer-Benefits-link__text {
     list-style-type: none;
     font-family: 'Lato';
     font-style: normal;
@@ -564,4 +565,92 @@ input:checked~.header-menu-list {
     display: flex;
 }
 
-.footer-photo-quote {}
+.footer-photo-quote {
+    display: block;
+    justify-content: center;
+    /*не понял, почему не привязал данные свойства к footer-photo-quote-title*/
+    text-align: center;
+    width: 800px;
+    border: red solid 1px;
+    /*рамки для отладки позиционирования*/
+    align-items: center;
+}
+
+.footer-photo-quote-face {
+    margin-top: 86px;
+}
+
+.footer-photo-quote-title {
+    max-width: 360px;
+    margin-top: 30px;
+    border: red solid 1px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-photo__form {
+    max-width: 800px;
+}
+
+.footer__wrp {
+    display: flex;
+    background-color: #222224;
+    min-height: 79px;
+    justify-content: space-between;
+}
+
+.footer__wrp-copyright {
+    font-family: Lato;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 19px;
+    line-height: 100%;
+    /*Align: Left Vertical align: Top Fill:;*/
+    color: #FBFBFB;
+    border: red solid 1px;
+    margin-top: 30px;
+}
+
+.footer__wrp-contacts {
+    display: flex;
+    text-decoration: none;
+    margin-top: 24px;
+    width: 148px;
+    justify-content: space-between;
+    border: red solid 1px;
+    list-style-type: none;
+}
+
+.footer__wrp-contacts li {
+    background-color: #ffffff;
+    fill: #000000;
+    width: 32px;
+    height: 32px;
+    /* display: block; */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: red solid 1px;
+}
+
+.footer__wrp-contacts-link {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    background-color: #ffffff;
+    fill: #000000;
+    width: 32px;
+    height: 32px;
+    /* display: block; */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: red solid 1px;
+}
+
+.footer-end-contacts li:hover {
+    fill: #ffffff;
+    background-color: #f16d7f;
+}
