@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body {
     margin: 0;
@@ -514,25 +514,36 @@ input:checked~.header-menu-list {
 
 .footer-Benefits {
     min-height: 341px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: #222224;
+
 }
 
-.footer-Benefits-kink {
+.footer-Benefits-link {
     max-width: 360px;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    list-style-type: none;
+    text-decoration: none;
+    align-items: center;
+
+    /* list-style-type: none; */
     /*padding-top: 103px;изначально хотел сделать черех один паддинг на весь блок*/
 }
 
-.footer-Benefits-link__icon {
-    margin-top: 103px;
-    justify-content: center;
+.footer-Benefits-link:hover .footer-Benefits-link__icon {
+    /* margin-top: 103px; */
+    /* justify-content: center; */
     /*не могу отцентровать иконки*/
-    text-align: center;
+    /* text-align: center; */
+    /* width: 100%; */
 }
 
 .footer-Benefits-link__title {
-    list-style-type: none;
+    /* list-style-type: none; */
     margin-top: 23px;
     font-family: 'Lato';
     font-style: normal;
@@ -541,17 +552,17 @@ input:checked~.header-menu-list {
     line-height: 24px;
     /* identical to box height */
     color: #FBFBFB;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .footer-Benefits-link__text {
-    list-style-type: none;
+    /* list-style-type: none; */
     font-family: 'Lato';
-    font-style: normal;
+    font-style: l;
     font-weight: 300;
     font-size: 13.972px;
     line-height: 17px;
-    text-align: center;
+    /* text-align: center; */
     margin: 16px;
     color: #FBFBFB;
 }
@@ -563,21 +574,40 @@ input:checked~.header-menu-list {
     /*background: rgba(244, 244, 244, 0.7);
     background-blend-mode: darken; сдесь попытка воспроизвести фото*/
     display: flex;
+    opacity: 0.7;
+}
+
+.footer-photo-blend {
+    min-height: 448px;
+    max-width: 1600px;
+    background-color: f4f4f4;
+    opacity: 0.7;
+}
+
+.footer-photo-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
 }
 
 .footer-photo-quote {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     /*не понял, почему не привязал данные свойства к footer-photo-quote-title*/
     text-align: center;
-    width: 800px;
+    /* width: 800px; */
     border: red solid 1px;
     /*рамки для отладки позиционирования*/
     align-items: center;
+
 }
 
 .footer-photo-quote-face {
-    margin-top: 86px;
+    /* margin-top: 86px; */
 }
 
 .footer-photo-quote-title {
@@ -587,10 +617,19 @@ input:checked~.header-menu-list {
     justify-content: center;
     text-align: center;
     align-items: center;
+    Font-family: Lato;
+    Font-style: Mixed;
+    Font-size: 20px;
+    Line-height: 24px;
+    Line-height: 100%;
+    Align: Center Vertical;
+    align: Top;
+    Fill: Solid #222224;
 }
 
 .footer-photo__form {
-    max-width: 800px;
+    /* max-width: 800px; */
+
 }
 
 .footer__wrp {
