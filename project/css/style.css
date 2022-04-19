@@ -523,13 +523,11 @@ input:checked~.header-menu-list {
 
 .footer-Benefits-link {
     max-width: 360px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
     align-items: center;
-
     /* list-style-type: none; */
     /*padding-top: 103px;изначально хотел сделать черех один паддинг на весь блок*/
 }
@@ -537,7 +535,6 @@ input:checked~.header-menu-list {
 .footer-Benefits-link:hover .footer-Benefits-link__icon {
     /* margin-top: 103px; */
     /* justify-content: center; */
-    /*не могу отцентровать иконки*/
     /* text-align: center; */
     /* width: 100%; */
 }
@@ -603,7 +600,6 @@ input:checked~.header-menu-list {
     border: red solid 1px;
     /*рамки для отладки позиционирования*/
     align-items: center;
-
 }
 
 .footer-photo-quote-face {
@@ -629,7 +625,6 @@ input:checked~.header-menu-list {
 
 .footer-photo__form {
     /* max-width: 800px; */
-
 }
 
 .footer__wrp {
